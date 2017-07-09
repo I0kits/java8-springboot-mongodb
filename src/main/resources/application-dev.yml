@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+#      uri: mongodb://localhost:27018,localhost:27019,localhost:27020/live?replicaSet=live_replset
+      uri: mongodb://10.205.22.169:27017,10.205.22.177:27017,10.205.22.178:27017/live?AutoConnectRetry=true&readPreference=secondaryPreferred
+      repositories:
+        enabled: true
+management:
+  security:
+    enabled: false
+
+#redis:
+#  hostname: localhost
+#  port: 6379
